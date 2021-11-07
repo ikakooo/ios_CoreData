@@ -11,6 +11,8 @@ import CoreData
 class AddFeedViewController: UIViewController {
     @IBOutlet weak private var inputTitle: UITextField!
     @IBOutlet weak private var inputTitleDescription: UITextField!
+    @IBOutlet weak var inputAutor: UITextField!
+    @IBOutlet weak var inputGenre: UITextField!
     
     
    
@@ -25,7 +27,7 @@ class AddFeedViewController: UIViewController {
     
     @IBAction func onSave(_ sender: UIButton) {
       //  saveData()
-        CoreDataManager.shared.saveFeed(data: Feed(title: inputTitle.text, description: inputTitleDescription.text))
+        CoreDataManager.shared.saveFeed(data: Feed(title: inputTitle.text, description: inputTitleDescription.text,author: inputAutor.text,genre: inputGenre.text))
         self.navigationController?.popViewController(animated: true)
     }
 }

@@ -84,15 +84,31 @@
                                     <action selector="onSave:" destination="CPb-ph-Bte" eventType="touchUpInside" id="jqp-x1-0ea"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Author" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="olE-Fh-cgu">
+                                <rect key="frame" x="30" y="246" width="354" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Genre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NBV-Bj-nSB">
+                                <rect key="frame" x="30" y="300" width="354" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="EhA-93-I7e"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="NBV-Bj-nSB" firstAttribute="top" secondItem="olE-Fh-cgu" secondAttribute="bottom" constant="20" id="2qZ-er-Es7"/>
                             <constraint firstItem="YRU-Nl-96Y" firstAttribute="leading" secondItem="EhA-93-I7e" secondAttribute="leading" constant="30" id="85n-9D-Rpr"/>
                             <constraint firstItem="sQV-vq-7Dn" firstAttribute="trailing" secondItem="YRU-Nl-96Y" secondAttribute="trailing" id="CYe-Zv-WaI"/>
                             <constraint firstItem="g8Z-xk-1JP" firstAttribute="centerX" secondItem="Ww2-DX-e6s" secondAttribute="centerX" id="EAb-Dt-zTP"/>
+                            <constraint firstItem="NBV-Bj-nSB" firstAttribute="trailing" secondItem="olE-Fh-cgu" secondAttribute="trailing" id="MZl-SG-6AK"/>
                             <constraint firstItem="EhA-93-I7e" firstAttribute="trailing" secondItem="YRU-Nl-96Y" secondAttribute="trailing" constant="30" id="P9f-d3-ZOu"/>
                             <constraint firstItem="YRU-Nl-96Y" firstAttribute="top" secondItem="EhA-93-I7e" secondAttribute="top" constant="50" id="Qg1-hl-AYg"/>
+                            <constraint firstItem="olE-Fh-cgu" firstAttribute="trailing" secondItem="sQV-vq-7Dn" secondAttribute="trailing" id="TFp-sR-FXD"/>
+                            <constraint firstItem="NBV-Bj-nSB" firstAttribute="leading" secondItem="olE-Fh-cgu" secondAttribute="leading" id="YId-KW-CSs"/>
+                            <constraint firstItem="olE-Fh-cgu" firstAttribute="top" secondItem="sQV-vq-7Dn" secondAttribute="bottom" constant="20" id="aly-bK-xpL"/>
+                            <constraint firstItem="olE-Fh-cgu" firstAttribute="leading" secondItem="sQV-vq-7Dn" secondAttribute="leading" id="blE-Wy-EtY"/>
                             <constraint firstItem="EhA-93-I7e" firstAttribute="bottom" secondItem="g8Z-xk-1JP" secondAttribute="bottom" constant="24" id="jN2-Z7-b3g"/>
                             <constraint firstItem="sQV-vq-7Dn" firstAttribute="top" secondItem="YRU-Nl-96Y" secondAttribute="bottom" constant="20" id="lFR-Ay-Qhb"/>
                             <constraint firstItem="sQV-vq-7Dn" firstAttribute="leading" secondItem="YRU-Nl-96Y" secondAttribute="leading" id="n8c-lm-ZDc"/>
@@ -100,6 +116,8 @@
                     </view>
                     <navigationItem key="navigationItem" title="Add Feed" id="Tov-xe-f6j"/>
                     <connections>
+                        <outlet property="inputAutor" destination="olE-Fh-cgu" id="pAu-fL-QCZ"/>
+                        <outlet property="inputGenre" destination="NBV-Bj-nSB" id="VQz-dk-hIM"/>
                         <outlet property="inputTitle" destination="YRU-Nl-96Y" id="cJP-yg-DAA"/>
                         <outlet property="inputTitleDescription" destination="sQV-vq-7Dn" id="evR-Zi-N2c"/>
                     </connections>
