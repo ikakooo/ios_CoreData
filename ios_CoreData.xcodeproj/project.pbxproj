@@ -21,6 +21,7 @@
 		3B14283E2735D8EC00B29758 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B14283D2735D8EC00B29758 /* Feed.swift */; };
 		3B1428422735D9E600B29758 /* FeedPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1428402735D9E600B29758 /* FeedPostTableViewCell.swift */; };
 		3B1428432735D9E600B29758 /* FeedPostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B1428412735D9E600B29758 /* FeedPostTableViewCell.xib */; };
+		3B502AC82738409C0075A068 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B502AC72738409C0075A068 /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		3B14283D2735D8EC00B29758 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
 		3B1428402735D9E600B29758 /* FeedPostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPostTableViewCell.swift; sourceTree = "<group>"; };
 		3B1428412735D9E600B29758 /* FeedPostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedPostTableViewCell.xib; sourceTree = "<group>"; };
+		3B502AC72738409C0075A068 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,7 +116,6 @@
 				3B1428362735CE0800B29758 /* Presentation */,
 				3B1428352735CDF300B29758 /* Resources */,
 				3B1428342735CDCF00B29758 /* Supporting Files */,
-				3B14280A2735CD5C00B29758 /* ios_CoreData.xcdatamodeld */,
 			);
 			path = ios_CoreData;
 			sourceTree = "<group>";
@@ -164,6 +165,7 @@
 		3B1428372735CE1400B29758 /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				3B502ACF273851DD0075A068 /* Managers */,
 				3B14283C2735D8C200B29758 /* Model */,
 			);
 			path = Infrastructure;
@@ -181,10 +183,7 @@
 		3B1428392735CE4500B29758 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				3B14283F2735D98700B29758 /* Feed Posts Cell  */,
-				3B1428052735CD5C00B29758 /* ViewController.swift */,
-				3B1428072735CD5C00B29758 /* Main.storyboard */,
-				3B14283A2735D59700B29758 /* AddFeedViewController.swift */,
+				3B502ACA273841E00075A068 /* Main */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -204,6 +203,50 @@
 				3B1428412735D9E600B29758 /* FeedPostTableViewCell.xib */,
 			);
 			path = "Feed Posts Cell ";
+			sourceTree = "<group>";
+		};
+		3B502AC62738406A0075A068 /* Local Database */ = {
+			isa = PBXGroup;
+			children = (
+				3B502AC72738409C0075A068 /* CoreDataManager.swift */,
+				3B14280A2735CD5C00B29758 /* ios_CoreData.xcdatamodeld */,
+			);
+			path = "Local Database";
+			sourceTree = "<group>";
+		};
+		3B502ACA273841E00075A068 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				3B1428072735CD5C00B29758 /* Main.storyboard */,
+				3B502ACE273851AC0075A068 /* Add Feed */,
+				3B502ACD273851830075A068 /* List Of Feeds */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		3B502ACD273851830075A068 /* List Of Feeds */ = {
+			isa = PBXGroup;
+			children = (
+				3B1428052735CD5C00B29758 /* ViewController.swift */,
+				3B14283F2735D98700B29758 /* Feed Posts Cell  */,
+			);
+			path = "List Of Feeds";
+			sourceTree = "<group>";
+		};
+		3B502ACE273851AC0075A068 /* Add Feed */ = {
+			isa = PBXGroup;
+			children = (
+				3B14283A2735D59700B29758 /* AddFeedViewController.swift */,
+			);
+			path = "Add Feed";
+			sourceTree = "<group>";
+		};
+		3B502ACF273851DD0075A068 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				3B502AC62738406A0075A068 /* Local Database */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -344,6 +387,7 @@
 				3B14283B2735D59700B29758 /* AddFeedViewController.swift in Sources */,
 				3B1428422735D9E600B29758 /* FeedPostTableViewCell.swift in Sources */,
 				3B14280C2735CD5C00B29758 /* ios_CoreData.xcdatamodeld in Sources */,
+				3B502AC82738409C0075A068 /* CoreDataManager.swift in Sources */,
 				3B1428042735CD5C00B29758 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

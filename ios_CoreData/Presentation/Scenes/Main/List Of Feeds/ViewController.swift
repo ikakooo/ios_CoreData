@@ -7,32 +7,42 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,FeedPostTableViewCellUpdaterDelegate {
     @IBOutlet weak var feedsTableView: UITableView!
     var FeedPostsList:[Feed] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         feedsTableView.dataSource = self
         feedsTableView.register(UINib(nibName: "FeedPostTableViewCell", bundle: nil), forCellReuseIdentifier: "FeedPostTableViewCell")
     }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        //print(CoreDataManager.shared.fetchFeedData())
+        FeedPostsList = CoreDataManager.shared.fetchFeedData()
+        feedsTableView.reloadData()
+    }
 
-
+    func updateTableView() {
+        print("ikakooooodfjsndf djkfns") //დელეგატიდან აქ იმიტომ არ შემოდის რომ ნილი გვაქვს იქ
+        feedsTableView.reloadData() // you do have an outlet of tableView I assume
+       
+    }
 }
 
 extension ViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 55//FeedPostsList.count
+        return FeedPostsList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FeedPostTableViewCell", for: indexPath) as! FeedPostTableViewCell
         
-        print(indexPath.row)
+        //print(indexPath.row)
         
-      ///  cell.configure(with: FeedPostsList[indexPath.row])
+        cell.configure(with: FeedPostsList[indexPath.row])
         
         return cell
     }

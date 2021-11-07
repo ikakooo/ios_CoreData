@@ -80,6 +80,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="SAVE">
                                     <fontDescription key="titleFontDescription" type="system" weight="black" pointSize="36"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="onSave:" destination="CPb-ph-Bte" eventType="touchUpInside" id="jqp-x1-0ea"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="EhA-93-I7e"/>
@@ -96,6 +99,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add Feed" id="Tov-xe-f6j"/>
+                    <connections>
+                        <outlet property="inputTitle" destination="YRU-Nl-96Y" id="cJP-yg-DAA"/>
+                        <outlet property="inputTitleDescription" destination="sQV-vq-7Dn" id="evR-Zi-N2c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rhu-g1-hcR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
