@@ -22,6 +22,7 @@
 		3B1428422735D9E600B29758 /* FeedPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1428402735D9E600B29758 /* FeedPostTableViewCell.swift */; };
 		3B1428432735D9E600B29758 /* FeedPostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B1428412735D9E600B29758 /* FeedPostTableViewCell.xib */; };
 		3B502AC82738409C0075A068 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B502AC72738409C0075A068 /* CoreDataManager.swift */; };
+		3B502AD2273873170075A068 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B502AD1273873170075A068 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		3B1428402735D9E600B29758 /* FeedPostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPostTableViewCell.swift; sourceTree = "<group>"; };
 		3B1428412735D9E600B29758 /* FeedPostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedPostTableViewCell.xib; sourceTree = "<group>"; };
 		3B502AC72738409C0075A068 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		3B502AD1273873170075A068 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +167,7 @@
 		3B1428372735CE1400B29758 /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				3B502AD0273872FB0075A068 /* Extensions */,
 				3B502ACF273851DD0075A068 /* Managers */,
 				3B14283C2735D8C200B29758 /* Model */,
 			);
@@ -247,6 +250,14 @@
 				3B502AC62738406A0075A068 /* Local Database */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		3B502AD0273872FB0075A068 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3B502AD1273873170075A068 /* Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -382,6 +393,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B1428062735CD5C00B29758 /* ViewController.swift in Sources */,
+				3B502AD2273873170075A068 /* Extensions.swift in Sources */,
 				3B14283E2735D8EC00B29758 /* Feed.swift in Sources */,
 				3B1428022735CD5C00B29758 /* AppDelegate.swift in Sources */,
 				3B14283B2735D59700B29758 /* AddFeedViewController.swift in Sources */,

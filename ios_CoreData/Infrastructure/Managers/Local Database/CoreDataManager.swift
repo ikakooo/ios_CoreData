@@ -29,9 +29,24 @@ class CoreDataManager{
         let feed = Feeds(context: managedContext)
         
         
+        // get the current date and time
+        let currentDateTime = Date()
+
+        // initialize the date formatter and set the style
+        let formatter = DateFormatter()
+        formatter.timeStyle = .short
+        formatter.dateStyle = .short
+        formatter.string(from: currentDateTime)
+
+        // get the date time String from the date object
+        formatter.string(from: currentDateTime) // October 8, 2016 at 10:48:53 PM
+        
         // Assign values to the entity's properties
         feed.title = data.title
         feed.titleDescription = data.description
+        feed.date = formatter.string(from: currentDateTime)
+        feed.author = data.author
+        feed.genre = data.genre
         
         // To save the new entity to the persistent store, call
         // save on the context
