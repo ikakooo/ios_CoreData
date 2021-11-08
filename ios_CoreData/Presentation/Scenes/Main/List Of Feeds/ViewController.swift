@@ -25,6 +25,7 @@ class ViewController: UIViewController,FeedPostTableViewCellUpdaterDelegate {
     }
 
     func updateTableView() {
+        FeedPostsList = CoreDataManager.shared.fetchFeedData()
         print("ikakooooodfjsndf djkfns") //დელეგატიდან აქ იმიტომ არ შემოდის რომ ნილი გვაქვს იქ
         feedsTableView.reloadData() // you do have an outlet of tableView I assume
        
@@ -41,7 +42,7 @@ extension ViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FeedPostTableViewCell", for: indexPath) as! FeedPostTableViewCell
         
         //print(indexPath.row)
-        
+        cell.delegate = self
         cell.configure(with: FeedPostsList[indexPath.row])
         
         return cell
