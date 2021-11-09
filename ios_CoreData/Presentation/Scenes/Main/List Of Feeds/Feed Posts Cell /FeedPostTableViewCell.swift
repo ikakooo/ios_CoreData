@@ -17,7 +17,7 @@ class FeedPostTableViewCell: UITableViewCell {
     weak var delegate: FeedPostTableViewCellUpdaterDelegate?
     
     @IBAction func onDeleteClick(_ sender: Any) {
-        CoreDataManager.shared.deleteRecords()
+        CoreDataManager.shared.deleteRecordBy(description: descriptionLabel.text ?? "")
        // feedsTableView.reloadData()
         delegate?.updateTableView() // ეს აქ რატომ არის ნილი?
     }
