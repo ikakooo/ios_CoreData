@@ -6,6 +6,7 @@
 //
 
 import Foundation
+
 struct Feed {
     var title:String?
     var description:String?

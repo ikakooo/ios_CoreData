@@ -23,6 +23,21 @@
 		3B1428432735D9E600B29758 /* FeedPostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B1428412735D9E600B29758 /* FeedPostTableViewCell.xib */; };
 		3B502AC82738409C0075A068 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B502AC72738409C0075A068 /* CoreDataManager.swift */; };
 		3B502AD2273873170075A068 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B502AD1273873170075A068 /* Extensions.swift */; };
+		3B9B4DCB273AE0330050C55B /* PostsCoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9B4DCA273AE0330050C55B /* PostsCoreDataManager.swift */; };
+		3B9B4DD0273AE63B0050C55B /* BasicUsersPostsListingNavigationController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B9B4DCF273AE63B0050C55B /* BasicUsersPostsListingNavigationController.storyboard */; };
+		3B9B4DD3273AEFBD0050C55B /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9B4DD2273AEFBD0050C55B /* SignInViewController.swift */; };
+		3B9B4DD6273AEFF40050C55B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9B4DD5273AEFF40050C55B /* RegisterViewController.swift */; };
+		3B9B4DD8273AF0AF0050C55B /* BasicUsersPostsListingNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9B4DD7273AF0AF0050C55B /* BasicUsersPostsListingNavigationController.swift */; };
+		3B9B4DDB273AF1000050C55B /* PostsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9B4DDA273AF1000050C55B /* PostsListViewController.swift */; };
+		3B9B4DDE273AF1470050C55B /* AddPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9B4DDD273AF1470050C55B /* AddPostViewController.swift */; };
+		3B9B4DE0273AF5230050C55B /* PostsListNavigationController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B9B4DDF273AF5230050C55B /* PostsListNavigationController.storyboard */; };
+		3B9B4DE2273AF6760050C55B /* PostsListNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9B4DE1273AF6760050C55B /* PostsListNavigationController.swift */; };
+		3B9B4DE4273B0C5C0050C55B /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9B4DE3273B0C5C0050C55B /* Post.swift */; };
+		3B9B4DE6273B0EF70050C55B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9B4DE5273B0EF70050C55B /* User.swift */; };
+		3B9B4DE8273B0F120050C55B /* UDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9B4DE7273B0F120050C55B /* UDManager.swift */; };
+		3B9B4DEA273B14920050C55B /* UsersCoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9B4DE9273B14920050C55B /* UsersCoreDataManager.swift */; };
+		3B9B4DEF273B1C380050C55B /* PostsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9B4DED273B1C380050C55B /* PostsTableViewCell.swift */; };
+		3B9B4DF0273B1C380050C55B /* PostsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B9B4DEE273B1C380050C55B /* PostsTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +78,21 @@
 		3B1428412735D9E600B29758 /* FeedPostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedPostTableViewCell.xib; sourceTree = "<group>"; };
 		3B502AC72738409C0075A068 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		3B502AD1273873170075A068 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		3B9B4DCA273AE0330050C55B /* PostsCoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsCoreDataManager.swift; sourceTree = "<group>"; };
+		3B9B4DCF273AE63B0050C55B /* BasicUsersPostsListingNavigationController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BasicUsersPostsListingNavigationController.storyboard; sourceTree = "<group>"; };
+		3B9B4DD2273AEFBD0050C55B /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		3B9B4DD5273AEFF40050C55B /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		3B9B4DD7273AF0AF0050C55B /* BasicUsersPostsListingNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicUsersPostsListingNavigationController.swift; sourceTree = "<group>"; };
+		3B9B4DDA273AF1000050C55B /* PostsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListViewController.swift; sourceTree = "<group>"; };
+		3B9B4DDD273AF1470050C55B /* AddPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostViewController.swift; sourceTree = "<group>"; };
+		3B9B4DDF273AF5230050C55B /* PostsListNavigationController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PostsListNavigationController.storyboard; sourceTree = "<group>"; };
+		3B9B4DE1273AF6760050C55B /* PostsListNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListNavigationController.swift; sourceTree = "<group>"; };
+		3B9B4DE3273B0C5C0050C55B /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		3B9B4DE5273B0EF70050C55B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3B9B4DE7273B0F120050C55B /* UDManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UDManager.swift; sourceTree = "<group>"; };
+		3B9B4DE9273B14920050C55B /* UsersCoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersCoreDataManager.swift; sourceTree = "<group>"; };
+		3B9B4DED273B1C380050C55B /* PostsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsTableViewCell.swift; sourceTree = "<group>"; };
+		3B9B4DEE273B1C380050C55B /* PostsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostsTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +216,7 @@
 		3B1428392735CE4500B29758 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				3B9B4DCC273AE4BE0050C55B /* Basic Users Posts Listing */,
 				3B502ACA273841E00075A068 /* Main */,
 			);
 			path = Scenes;
@@ -195,6 +226,8 @@
 			isa = PBXGroup;
 			children = (
 				3B14283D2735D8EC00B29758 /* Feed.swift */,
+				3B9B4DE3273B0C5C0050C55B /* Post.swift */,
+				3B9B4DE5273B0EF70050C55B /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -211,6 +244,8 @@
 		3B502AC62738406A0075A068 /* Local Database */ = {
 			isa = PBXGroup;
 			children = (
+				3B9B4DE9273B14920050C55B /* UsersCoreDataManager.swift */,
+				3B9B4DCA273AE0330050C55B /* PostsCoreDataManager.swift */,
 				3B502AC72738409C0075A068 /* CoreDataManager.swift */,
 				3B14280A2735CD5C00B29758 /* ios_CoreData.xcdatamodeld */,
 			);
@@ -248,6 +283,7 @@
 			isa = PBXGroup;
 			children = (
 				3B502AC62738406A0075A068 /* Local Database */,
+				3B9B4DE7273B0F120050C55B /* UDManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -258,6 +294,71 @@
 				3B502AD1273873170075A068 /* Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3B9B4DCC273AE4BE0050C55B /* Basic Users Posts Listing */ = {
+			isa = PBXGroup;
+			children = (
+				3B9B4DD9273AF0CB0050C55B /* Posts List */,
+				3B9B4DD4273AEFE20050C55B /* Register */,
+				3B9B4DD1273AEF990050C55B /* Sign In */,
+				3B9B4DCF273AE63B0050C55B /* BasicUsersPostsListingNavigationController.storyboard */,
+				3B9B4DD7273AF0AF0050C55B /* BasicUsersPostsListingNavigationController.swift */,
+			);
+			path = "Basic Users Posts Listing";
+			sourceTree = "<group>";
+		};
+		3B9B4DD1273AEF990050C55B /* Sign In */ = {
+			isa = PBXGroup;
+			children = (
+				3B9B4DD2273AEFBD0050C55B /* SignInViewController.swift */,
+			);
+			path = "Sign In";
+			sourceTree = "<group>";
+		};
+		3B9B4DD4273AEFE20050C55B /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				3B9B4DD5273AEFF40050C55B /* RegisterViewController.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		3B9B4DD9273AF0CB0050C55B /* Posts List */ = {
+			isa = PBXGroup;
+			children = (
+				3B9B4DDF273AF5230050C55B /* PostsListNavigationController.storyboard */,
+				3B9B4DEB273B1B390050C55B /* List Of Posts */,
+				3B9B4DDC273AF1250050C55B /* Add Post */,
+			);
+			path = "Posts List";
+			sourceTree = "<group>";
+		};
+		3B9B4DDC273AF1250050C55B /* Add Post */ = {
+			isa = PBXGroup;
+			children = (
+				3B9B4DDD273AF1470050C55B /* AddPostViewController.swift */,
+			);
+			path = "Add Post";
+			sourceTree = "<group>";
+		};
+		3B9B4DEB273B1B390050C55B /* List Of Posts */ = {
+			isa = PBXGroup;
+			children = (
+				3B9B4DEC273B1C080050C55B /* Posts Cell */,
+				3B9B4DDA273AF1000050C55B /* PostsListViewController.swift */,
+				3B9B4DE1273AF6760050C55B /* PostsListNavigationController.swift */,
+			);
+			path = "List Of Posts";
+			sourceTree = "<group>";
+		};
+		3B9B4DEC273B1C080050C55B /* Posts Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3B9B4DED273B1C380050C55B /* PostsTableViewCell.swift */,
+				3B9B4DEE273B1C380050C55B /* PostsTableViewCell.xib */,
+			);
+			path = "Posts Cell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -367,7 +468,10 @@
 				3B1428112735CD5D00B29758 /* LaunchScreen.storyboard in Resources */,
 				3B14280E2735CD5D00B29758 /* Assets.xcassets in Resources */,
 				3B1428092735CD5C00B29758 /* Main.storyboard in Resources */,
+				3B9B4DE0273AF5230050C55B /* PostsListNavigationController.storyboard in Resources */,
 				3B1428432735D9E600B29758 /* FeedPostTableViewCell.xib in Resources */,
+				3B9B4DD0273AE63B0050C55B /* BasicUsersPostsListingNavigationController.storyboard in Resources */,
+				3B9B4DF0273B1C380050C55B /* PostsTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,15 +496,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B9B4DE4273B0C5C0050C55B /* Post.swift in Sources */,
 				3B1428062735CD5C00B29758 /* ViewController.swift in Sources */,
+				3B9B4DDE273AF1470050C55B /* AddPostViewController.swift in Sources */,
+				3B9B4DD8273AF0AF0050C55B /* BasicUsersPostsListingNavigationController.swift in Sources */,
 				3B502AD2273873170075A068 /* Extensions.swift in Sources */,
+				3B9B4DCB273AE0330050C55B /* PostsCoreDataManager.swift in Sources */,
+				3B9B4DDB273AF1000050C55B /* PostsListViewController.swift in Sources */,
 				3B14283E2735D8EC00B29758 /* Feed.swift in Sources */,
 				3B1428022735CD5C00B29758 /* AppDelegate.swift in Sources */,
+				3B9B4DEA273B14920050C55B /* UsersCoreDataManager.swift in Sources */,
 				3B14283B2735D59700B29758 /* AddFeedViewController.swift in Sources */,
 				3B1428422735D9E600B29758 /* FeedPostTableViewCell.swift in Sources */,
+				3B9B4DEF273B1C380050C55B /* PostsTableViewCell.swift in Sources */,
 				3B14280C2735CD5C00B29758 /* ios_CoreData.xcdatamodeld in Sources */,
+				3B9B4DD3273AEFBD0050C55B /* SignInViewController.swift in Sources */,
+				3B9B4DD6273AEFF40050C55B /* RegisterViewController.swift in Sources */,
+				3B9B4DE6273B0EF70050C55B /* User.swift in Sources */,
 				3B502AC82738409C0075A068 /* CoreDataManager.swift in Sources */,
 				3B1428042735CD5C00B29758 /* SceneDelegate.swift in Sources */,
+				3B9B4DE2273AF6760050C55B /* PostsListNavigationController.swift in Sources */,
+				3B9B4DE8273B0F120050C55B /* UDManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
